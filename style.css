@@ -10,11 +10,35 @@
 .Section1{
     background-image: url(images/heroimg.png);
     background-size: cover;
+    position: relative;
     width: 100%;
     background-position: auto;
     background-repeat: no-repeat;
     padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+
+.text1, .mouse_icon{
+    z-index: 3;
+}
+
+.text1{
+
+}
+
+.Section1:after{
+    opacity: 0.87;
+    background: linear-gradient(to left, #bb4343 0%, #efab4b 100%);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index:0;
 }
 
 .menu_burger{
@@ -32,7 +56,7 @@
 
 .head1{
     padding-top: 219px;
-    text-align: left;
+    text-align: center;
     width: 652px;
     height: 37px;
     color: #ffffff;
@@ -71,8 +95,9 @@
 .mouse_icon{
     width: 30px;
     height: 48px;
-    padding-top: 691px;
+    padding-top: 260px;
     padding-bottom: 61px;
+    align-self: center;
     margin: auto; /* Отступ слева и справа */
  
 }
@@ -137,6 +162,19 @@
     background-position: auto;
     background-image: url(images/imgsection3.png);
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.Section3:after{
+    background: #222222;
+    opacity: 0.4;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
 }
 
 .rectangle{
@@ -206,7 +244,7 @@
 
 .navbar-list {
     list-style: none;
-    text-decoration: none;
+    
     padding-top: 80px;
     margin: auto;
     width: 656px;
@@ -224,6 +262,12 @@
 	display: flex;
     justify-content: space-between;
 	list-style: none;
+  }
+
+
+.navbar-link{
+    text-decoration: none;
+    color: #222222;;
   }
 
   .navbar-itemAll{
@@ -311,4 +355,3 @@
     height: 420px;
     background-image: url(images/Layer_9.png);
 }
-
